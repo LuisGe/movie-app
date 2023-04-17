@@ -26,14 +26,14 @@ export default class Home extends React.Component{
     render() {
         return (
             <React.Fragment>
-                <Typography variant="h4" sx={{color:'darkblue', fontWeight:'bold', marginY:4}}>Buscador de Peliculas</Typography>
-                <SearchForm  onResult={this._handleResult}/>
-                <MovieList results={this.state.result.results}/>
                 <Link
                     to="/prefers"
                 >
                     <Button sx={{margin:2,float:'right'}} variant="outlined" color="warning"><StarIcon/> Favoritos</Button>
                 </Link>
+                <Typography variant="h4" sx={{color:'darkblue', fontWeight:'bold', marginY:4}}>Buscador de Peliculas</Typography>
+                <SearchForm  onResult={this._handleResult}/>
+                <MovieList results={this.state.result.results}/>
             </React.Fragment>
         );
     }

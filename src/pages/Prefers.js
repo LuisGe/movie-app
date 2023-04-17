@@ -20,13 +20,13 @@ export default class Home extends React.Component{
     render() {
         return (
             <React.Fragment>
-                <Typography variant="h4" sx={{color:'darkblue', fontWeight:'bold', marginY:4}}>Peliculas Favoritas</Typography>
-                <MovieList results={this.state.result.results}/>
                 <Link
                     to="/"
                 >
                     <Button sx={{margin:2,float:'left'}} variant="outlined" color="success"><ArrowBackIcon/> Volver</Button>
                 </Link>
+                <Typography variant="h4" sx={{color:'darkblue', fontWeight:'bold', marginY:4}}>Peliculas Favoritas</Typography>
+                <MovieList results={this.state.result.results}/>
             </React.Fragment>
         );
     }
